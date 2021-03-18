@@ -1,1 +1,263 @@
 /* Add CSS styling here */
+/* CSS Reset */ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+
+/* BEGIN */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  padding: 0rem 18.75rem;
+  font-family: "Montserrat", sans-serif, bold;
+  background-color:;
+}
+
+/* TITLE */
+
+.Flexbox {
+  border-radius: 0.5rem;
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  justify-content: center;
+  padding: 0.625rem 0.625rem;
+  background-color: #FDB834;
+  background: url("https://uploads-ssl.webflow.com/6010580d08831070b0339b25/602f4f942c6b59e2eaac5cde_Artboard%203.png");
+}
+
+h1 {
+  width: 15.625rem;
+  height: 0 auto;
+  position: relative;
+  left: 1.25remx;
+  font-size: 2.8125rem;
+  font-weight: bold;
+  color:white;
+  padding: 0.625rem 0.625rem;
+}
+
+/* NAVIGATION */
+
+nav {
+  width: 80%;
+  position: relative;
+  left: 1.25rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-around;
+  
+}
+
+nav a {
+  width: 6.25rem;
+  font-size: 1rem;
+  display:flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 1.125rem 2rem;
+  color: white;
+  
+}
+
+/* Section 1: Display x Summary */
+.Section1 {
+  border-radius: 0.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #2C2D2D;
+}
+.Display {
+  width: 37.5rem;
+  height: 28.125rem;
+  border: 0.0625rem solid #2C2D2D;
+  margin: 1.875rem 1.875rem ;
+}
+
+.cove {
+  border-radius: 0.5rem;
+}
+
+.Display img {
+  border-radius: 0.5rem;
+  border: 0.0625rem solid white;
+  object-fit: contain;
+ 
+}
+
+.Summary {
+  width: 43.75rem;
+  height: 28.125rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1.875rem 1.25rem;
+  
+}
+
+.sumsub {
+  display:flex;
+  flex-flow: column wrap;
+  width: 18.75ren;
+  padding: 5rem 5rem;
+  row-gap: 1.25rem;
+  border: 0.0625rem solid #2C2D2D;
+  position: relative;
+  left: 3.4375rem;
+}
+
+.sumsub p{
+  font-size: 0.9375rem;
+}
+.boop {
+  border-radius: 3.625rem;
+  padding: 0.9375rem 1.5625rem;
+  width: 12.5rem;
+  background-color: #FDB834;
+  color:white;
+  font-weight: bold;
+  
+}
+
+ h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: white;
+}
+
+span { 
+ font-weight: normal;
+ color: white;
+}
+
+p{
+  color:#FDB834;
+  font-weight: bold;
+}
+/* BREAK */
+
+
+/* Section 2: Gallery */
+  
+.Gallery {
+  border-radius: 0.5rem;
+  display: flex;
+  border: 0.0625rem solid white;
+  height: auto;
+  flex-flow: row wrap ;
+  justify-content: space-evenly;
+  padding: 1.125rem 0.4375rem;
+  row-gap: 1.25rem;
+  
+  }
+
+.Gallery img {
+  border: 0.0625rem solid #2C2D2D;
+  width: 18.75rem;
+  height: 18.75rem;
+  border-radius: 0.5rem;
+}
+
+.LTL {
+  object-fit: cover;
+}
+
+.kewl {
+  object-fit: cover;
+}
+
+/* Footer: Socials/Contact */
+
+footer {
+  display:flex;
+  flex-flow: column wrap;
+  justify-content:center;
+  align-content: center;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  border: 0.0625rem solid #2C2D2D;
+  column-gap: 5rem;
+  border-radius: 0.5rem;
+  background-color:#2C2D2D ;
+  background: url("https://uploads-ssl.webflow.com/6010580d08831070b0339b25/602f5a17a0b670095594aa78_cdfhg.png");
+}
+
+.nup{
+  border: 0.0625rem solid white;
+}
+  footer button {
+  background-color: #FDB834;
+  border-radius: 3.625rem;
+  -webkit-transition: all 800ms ease;
+  transition: all 800ms ease;
+  color: White;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+}
+
+footer button:hover {
+  box-shadow: 0 0.5rem 1rem 0 rgba(39, 17, 45, 0.1);
+  -webkit-transform: scale(1.05) translate(0rem, -0.25rem);
+  -ms-transform: scale(1.05) translate(0rem, -0.25rem);
+  transform: scale(1.05) translate(0rem, -0.25rem);
+}
+
+.socials{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+  Row-gap: 5rem;
+}
+
+.socials a h4{
+  color: white;
+ 
